@@ -6,7 +6,7 @@ A Simplified wxPython Wrapper (Inspired by PySimpleGUI)
 ## Demo code
 
 ```
-from wxSimpleGUI import SimpleStaticSizer, SimpleSizer, SimpleApp, utils
+from wxPythonSimple import SimpleStaticSizer, SimpleSizer, SimpleApp, utils
 import wx
 
 # Sample data for demo purposes
