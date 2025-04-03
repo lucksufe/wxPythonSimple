@@ -1,6 +1,8 @@
 # wxPythonSimple
 A Simplified wxPython Wrapper (Inspired by PySimpleGUI)
+
 ![demo](demo.png)
+
 ## Demo code
 
 ```
