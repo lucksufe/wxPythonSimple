@@ -27,8 +27,11 @@ def get_ui_dict(panel):
     widgets = panel.GetChildren()
     kv = {}
     for widget in widgets:
-        if hasattr(widget, 'GetValue') and hasattr(widget, 'GetName'):
-            kv[widget.GetName()] = widget.GetValue()
+        if hasattr(widget, 'GetName'):
+            if hasattr(widget, 'GetValue'):
+                kv[widget.GetName()] = widget.GetValue()
+            elif hasattr(widget, 'GetPath'):
+                kv[widget.GetName()] = widget.GetPath()
     return kv
 
 
